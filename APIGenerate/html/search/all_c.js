@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['radius_31',['radius',['../class_clipping_cyllinder.html#a3e85488488250b22b184103c26ab94d2',1,'ClippingCyllinder.radius()'],['../class_x_ray_values.html#afe7e6aa8ffdee8c0b568be193796bcb3',1,'XRayValues.radius()']]],
-  ['resetview_32',['resetView',['../class_flip_camera.html#afe688e28f2e6ef7b34c526a9abcfc9b7',1,'FlipCamera']]],
-  ['rightbox_33',['rightBox',['../class_flip_camera.html#a83a9e7ae0985bab479425b96753d60fb',1,'FlipCamera']]]
+  ['pos_34',['pos',['../class_x_ray_values.html#ac2ad0053dfd6cbe6596776578cfdaca5',1,'XRayValues']]],
+  ['position_35',['position',['../class_clipping_cyllinder.html#af3a9b1c74987b6e0866a4ffb3cebf72b',1,'ClippingCyllinder']]]
 ];

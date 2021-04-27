@@ -1,0 +1,142 @@
+\hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x}{}\doxysection{Lean.\+Touch.\+Lean\+Drag\+TranslateX Class Reference}
+\label{class_lean_1_1_touch_1_1_lean_drag_translate_x}\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+
+
+This component allows you to translate the current Game\+Object relative to the camera using the finger drag gesture.  
+
+
+Inheritance diagram for Lean.\+Touch.\+Lean\+Drag\+TranslateX\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lean_1_1_touch_1_1_lean_drag_translate_x}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_a464efa2030abe29dcb73068e34aaede8}{Add\+Finger}} (Lean\+Finger finger)
+\begin{DoxyCompactList}\small\item\em If you\textquotesingle{}ve set Use to Manually\+Added\+Fingers, then you can call this method to manually add a finger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_af618f434af42c437288e83827c648a52}{Remove\+Finger}} (Lean\+Finger finger)
+\begin{DoxyCompactList}\small\item\em If you\textquotesingle{}ve set Use to Manually\+Added\+Fingers, then you can call this method to manually remove a finger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_a25b02876d0ff8534751e00b3461e3ad5}{Remove\+All\+Fingers}} ()
+\begin{DoxyCompactList}\small\item\em If you\textquotesingle{}ve set Use to Manually\+Added\+Fingers, then you can call this method to manually remove all fingers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Lean\+Finger\+Filter \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_a0ff49f613c48bc09911bedb76e5f2fad}{Use}} = new Lean\+Finger\+Filter(true)
+\begin{DoxyCompactList}\small\item\em The method used to find fingers to use with this component. See Lean\+Finger\+Filter documentation for more information. \end{DoxyCompactList}\item 
+Camera \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_a4d19187cef2dfabb4faa30173dd46974}{Camera}}
+\begin{DoxyCompactList}\small\item\em The camera the translation will be calculated using.~\newline
+\textbackslash{}n\+None = Main\+Camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_a37e4ac222ad3c2d940de3ba2cfaef5fe}{Sensitivity}} = 1.\+0f
+\begin{DoxyCompactList}\small\item\em The sensitivity of the translation. 1 = Default. 2 = Double. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_a09a067797d13cf28921115f3db2abb75}{Damping}} = -\/1.\+0f
+\begin{DoxyCompactList}\small\item\em If you want this component to change smoothly over time, then this allows you to control how quick the changes reach their target value. -\/1 = Instantly change. 1 = Slowly change. 10 = Quickly change. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lean_1_1_touch_1_1_lean_drag_translate_x_a08b81d88d8f79c17c48fab0c1334b398}{Inertia}}
+\begin{DoxyCompactList}\small\item\em This allows you to control how much momenum is retained when the dragging fingers are all released. NOTE\+: This requires {\bfseries{Dampening}} to be above 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a9122ceb64cbc5e858a32969db205ae66}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a9122ceb64cbc5e858a32969db205ae66}} 
+virtual void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a51ac9bdb83c3dd19e6f9ad0d5830ad58}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a51ac9bdb83c3dd19e6f9ad0d5830ad58}} 
+virtual void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This component allows you to translate the current Game\+Object relative to the camera using the finger drag gesture. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a464efa2030abe29dcb73068e34aaede8}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a464efa2030abe29dcb73068e34aaede8}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!AddFinger@{AddFinger}}
+\index{AddFinger@{AddFinger}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{AddFinger()}{AddFinger()}}
+{\footnotesize\ttfamily void Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Add\+Finger (\begin{DoxyParamCaption}\item[{Lean\+Finger}]{finger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+If you\textquotesingle{}ve set Use to Manually\+Added\+Fingers, then you can call this method to manually add a finger. 
+
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a25b02876d0ff8534751e00b3461e3ad5}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a25b02876d0ff8534751e00b3461e3ad5}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!RemoveAllFingers@{RemoveAllFingers}}
+\index{RemoveAllFingers@{RemoveAllFingers}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{RemoveAllFingers()}{RemoveAllFingers()}}
+{\footnotesize\ttfamily void Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Remove\+All\+Fingers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+If you\textquotesingle{}ve set Use to Manually\+Added\+Fingers, then you can call this method to manually remove all fingers. 
+
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_af618f434af42c437288e83827c648a52}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_af618f434af42c437288e83827c648a52}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!RemoveFinger@{RemoveFinger}}
+\index{RemoveFinger@{RemoveFinger}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{RemoveFinger()}{RemoveFinger()}}
+{\footnotesize\ttfamily void Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Remove\+Finger (\begin{DoxyParamCaption}\item[{Lean\+Finger}]{finger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+If you\textquotesingle{}ve set Use to Manually\+Added\+Fingers, then you can call this method to manually remove a finger. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a4d19187cef2dfabb4faa30173dd46974}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a4d19187cef2dfabb4faa30173dd46974}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!Camera@{Camera}}
+\index{Camera@{Camera}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{Camera}{Camera}}
+{\footnotesize\ttfamily Camera Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Camera}
+
+
+
+The camera the translation will be calculated using.~\newline
+\textbackslash{}n\+None = Main\+Camera. 
+
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a09a067797d13cf28921115f3db2abb75}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a09a067797d13cf28921115f3db2abb75}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!Damping@{Damping}}
+\index{Damping@{Damping}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{Damping}{Damping}}
+{\footnotesize\ttfamily float Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Damping = -\/1.\+0f}
+
+
+
+If you want this component to change smoothly over time, then this allows you to control how quick the changes reach their target value. -\/1 = Instantly change. 1 = Slowly change. 10 = Quickly change. 
+
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a08b81d88d8f79c17c48fab0c1334b398}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a08b81d88d8f79c17c48fab0c1334b398}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!Inertia@{Inertia}}
+\index{Inertia@{Inertia}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{Inertia}{Inertia}}
+{\footnotesize\ttfamily float Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Inertia}
+
+
+
+This allows you to control how much momenum is retained when the dragging fingers are all released. NOTE\+: This requires {\bfseries{Dampening}} to be above 0. 
+
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a37e4ac222ad3c2d940de3ba2cfaef5fe}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a37e4ac222ad3c2d940de3ba2cfaef5fe}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!Sensitivity@{Sensitivity}}
+\index{Sensitivity@{Sensitivity}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{Sensitivity}{Sensitivity}}
+{\footnotesize\ttfamily float Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Sensitivity = 1.\+0f}
+
+
+
+The sensitivity of the translation. 1 = Default. 2 = Double. 
+
+\mbox{\Hypertarget{class_lean_1_1_touch_1_1_lean_drag_translate_x_a0ff49f613c48bc09911bedb76e5f2fad}\label{class_lean_1_1_touch_1_1_lean_drag_translate_x_a0ff49f613c48bc09911bedb76e5f2fad}} 
+\index{Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}!Use@{Use}}
+\index{Use@{Use}!Lean.Touch.LeanDragTranslateX@{Lean.Touch.LeanDragTranslateX}}
+\doxysubsubsection{\texorpdfstring{Use}{Use}}
+{\footnotesize\ttfamily Lean\+Finger\+Filter Lean.\+Touch.\+Lean\+Drag\+Translate\+X.\+Use = new Lean\+Finger\+Filter(true)}
+
+
+
+The method used to find fingers to use with this component. See Lean\+Finger\+Filter documentation for more information. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/hayunchong/\+Documents/\+School/\+College/2020 Fall/\+CGUI/\+ARMaster3 copy/\+Assets/\+Scripts/Lean\+Drag\+Translate\+X.\+cs\end{DoxyCompactItemize}

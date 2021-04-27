@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['isfrontview_89',['isFrontView',['../class_flip_camera.html#adb2903236d15991265bcacd3cf764e2b',1,'FlipCamera']]],
-  ['isxray_90',['isXRay',['../class_scene_handler.html#a24efe58f87ec3ed014b20a29483f852a',1,'SceneHandler']]]
+  ['groundplanestage_101',['groundPlaneStage',['../class_a_r_handler.html#a297c5c6c349ae85b67bc40739f40a6b2',1,'ARHandler']]]
 ];

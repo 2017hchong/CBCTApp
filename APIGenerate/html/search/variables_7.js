@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mainbuttoncanvas_93',['mainButtonCanvas',['../class_scene_handler.html#a0776102bd31d56e4d67f43655b67c274',1,'SceneHandler']]],
-  ['maincam_94',['mainCam',['../class_flip_camera.html#aee43d0af70acbb5b29139939f37accc6',1,'FlipCamera.mainCam()'],['../class_scene_handler.html#a8ef1b858b19bb36707ed5f45bb862aca',1,'SceneHandler.mainCam()']]],
-  ['mat_95',['mat',['../class_clipping_cyllinder.html#a6a271f7c7125d29c5fed73ecff82b023',1,'ClippingCyllinder']]]
+  ['inertia_104',['Inertia',['../class_lean_1_1_touch_1_1_lean_drag_translate_x.html#a08b81d88d8f79c17c48fab0c1334b398',1,'Lean.Touch.LeanDragTranslateX.Inertia()'],['../class_lean_1_1_touch_1_1_lean_drag_translate_y.html#a0924aa1bb824bcbc79a19f664d4261c7',1,'Lean.Touch.LeanDragTranslateY.Inertia()']]],
+  ['isfrontview_105',['isFrontView',['../class_flip_camera.html#adb2903236d15991265bcacd3cf764e2b',1,'FlipCamera']]],
+  ['isxray_106',['isXRay',['../class_scene_handler.html#a24efe58f87ec3ed014b20a29483f852a',1,'SceneHandler']]]
 ];

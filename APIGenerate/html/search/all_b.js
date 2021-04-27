@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pos_29',['pos',['../class_x_ray_values.html#ac2ad0053dfd6cbe6596776578cfdaca5',1,'XRayValues']]],
-  ['position_30',['position',['../class_clipping_cyllinder.html#af3a9b1c74987b6e0866a4ffb3cebf72b',1,'ClippingCyllinder']]]
+  ['nonarmode_33',['NonARMode',['../class_a_r_handler.html#af60805baadb8f3ce067f83b7bfac503b',1,'ARHandler']]]
 ];
