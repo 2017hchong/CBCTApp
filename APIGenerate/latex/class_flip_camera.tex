@@ -1,0 +1,132 @@
+\hypertarget{class_flip_camera}{}\doxysection{Flip\+Camera Class Reference}
+\label{class_flip_camera}\index{FlipCamera@{FlipCamera}}
+
+
+\mbox{\hyperlink{class_flip_camera}{Flip\+Camera}} is the script used for controlling the locations of the two cameras and the orientation of the head in the user interface. It always ensures that the main camera is scanning the part of the screen that the user wants to interact with.  
+
+
+Inheritance diagram for Flip\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_flip_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_flip_camera_aab0df93936bbbdc8bece5452192ae2b5}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_flip_camera_afe688e28f2e6ef7b34c526a9abcfc9b7}{reset\+View}} ()
+\item 
+void \mbox{\hyperlink{class_flip_camera_a0f45563faef97fb5b7ffe21c28263695}{button\+Flip\+Camera}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Camera \mbox{\hyperlink{class_flip_camera_aee43d0af70acbb5b29139939f37accc6}{main\+Cam}}
+\begin{DoxyCompactList}\small\item\em The main camera. Always located on the z-\/axis. \end{DoxyCompactList}\item 
+Camera \mbox{\hyperlink{class_flip_camera_a283a31c2aefb8f764dca36b3e82c4a39}{side\+Cam}}
+\begin{DoxyCompactList}\small\item\em The side camera. Scans the orientation of the head not scanned by the main camera. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_flip_camera_a996078454c0f6b877c5cafc84cfeaf28}{head\+Empty}}
+\begin{DoxyCompactList}\small\item\em An empty Game\+Object that contains the head. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_flip_camera_aee130bf538f0841c3f44f61f96a5bc74}{left\+Box}}
+\begin{DoxyCompactList}\small\item\em The box on the left side of the screen. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_flip_camera_a83a9e7ae0985bab479425b96753d60fb}{right\+Box}}
+\begin{DoxyCompactList}\small\item\em The box on the right side of the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_flip_camera_adb2903236d15991265bcacd3cf764e2b}{is\+Front\+View}} = true
+\begin{DoxyCompactList}\small\item\em Boolean to keep track of which camera is at which side of the screen. True if the main camera is on the left side and is capturing the front view of the head. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_flip_camera}{Flip\+Camera}} is the script used for controlling the locations of the two cameras and the orientation of the head in the user interface. It always ensures that the main camera is scanning the part of the screen that the user wants to interact with. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flip_camera_a0f45563faef97fb5b7ffe21c28263695}\label{class_flip_camera_a0f45563faef97fb5b7ffe21c28263695}} 
+\index{FlipCamera@{FlipCamera}!buttonFlipCamera@{buttonFlipCamera}}
+\index{buttonFlipCamera@{buttonFlipCamera}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{buttonFlipCamera()}{buttonFlipCamera()}}
+{\footnotesize\ttfamily void Flip\+Camera.\+button\+Flip\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method sets the camera orientations correctly, depending on the value of is\+Front\+View. It rotates the side camera depending on whether to fix it to capture the front or side view of the camera. The head is also rotated by 90 degrees clockwise if is\+Front\+View is false. Layer\+Masks are updated for the UI boxes depending on which camera is capturing which box. \mbox{\Hypertarget{class_flip_camera_afe688e28f2e6ef7b34c526a9abcfc9b7}\label{class_flip_camera_afe688e28f2e6ef7b34c526a9abcfc9b7}} 
+\index{FlipCamera@{FlipCamera}!resetView@{resetView}}
+\index{resetView@{resetView}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{resetView()}{resetView()}}
+{\footnotesize\ttfamily void Flip\+Camera.\+reset\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method sets the view back to the view where the main camera is on the left and is capturing the front face view. It also sets is\+Front\+View to true. \mbox{\Hypertarget{class_flip_camera_aab0df93936bbbdc8bece5452192ae2b5}\label{class_flip_camera_aab0df93936bbbdc8bece5452192ae2b5}} 
+\index{FlipCamera@{FlipCamera}!Update@{Update}}
+\index{Update@{Update}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Flip\+Camera.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Update method gets called at each frame. This method is listening for a user input at each frame. If it detects user input, it determines which side of the screen it occured at, and flips the cameras accordingly. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_flip_camera_a996078454c0f6b877c5cafc84cfeaf28}\label{class_flip_camera_a996078454c0f6b877c5cafc84cfeaf28}} 
+\index{FlipCamera@{FlipCamera}!headEmpty@{headEmpty}}
+\index{headEmpty@{headEmpty}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{headEmpty}{headEmpty}}
+{\footnotesize\ttfamily Game\+Object Flip\+Camera.\+head\+Empty}
+
+
+
+An empty Game\+Object that contains the head. 
+
+\mbox{\Hypertarget{class_flip_camera_adb2903236d15991265bcacd3cf764e2b}\label{class_flip_camera_adb2903236d15991265bcacd3cf764e2b}} 
+\index{FlipCamera@{FlipCamera}!isFrontView@{isFrontView}}
+\index{isFrontView@{isFrontView}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{isFrontView}{isFrontView}}
+{\footnotesize\ttfamily bool Flip\+Camera.\+is\+Front\+View = true\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Boolean to keep track of which camera is at which side of the screen. True if the main camera is on the left side and is capturing the front view of the head. 
+
+\mbox{\Hypertarget{class_flip_camera_aee130bf538f0841c3f44f61f96a5bc74}\label{class_flip_camera_aee130bf538f0841c3f44f61f96a5bc74}} 
+\index{FlipCamera@{FlipCamera}!leftBox@{leftBox}}
+\index{leftBox@{leftBox}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{leftBox}{leftBox}}
+{\footnotesize\ttfamily Game\+Object Flip\+Camera.\+left\+Box}
+
+
+
+The box on the left side of the screen. 
+
+\mbox{\Hypertarget{class_flip_camera_aee43d0af70acbb5b29139939f37accc6}\label{class_flip_camera_aee43d0af70acbb5b29139939f37accc6}} 
+\index{FlipCamera@{FlipCamera}!mainCam@{mainCam}}
+\index{mainCam@{mainCam}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{mainCam}{mainCam}}
+{\footnotesize\ttfamily Camera Flip\+Camera.\+main\+Cam}
+
+
+
+The main camera. Always located on the z-\/axis. 
+
+\mbox{\Hypertarget{class_flip_camera_a83a9e7ae0985bab479425b96753d60fb}\label{class_flip_camera_a83a9e7ae0985bab479425b96753d60fb}} 
+\index{FlipCamera@{FlipCamera}!rightBox@{rightBox}}
+\index{rightBox@{rightBox}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{rightBox}{rightBox}}
+{\footnotesize\ttfamily Game\+Object Flip\+Camera.\+right\+Box}
+
+
+
+The box on the right side of the screen. 
+
+\mbox{\Hypertarget{class_flip_camera_a283a31c2aefb8f764dca36b3e82c4a39}\label{class_flip_camera_a283a31c2aefb8f764dca36b3e82c4a39}} 
+\index{FlipCamera@{FlipCamera}!sideCam@{sideCam}}
+\index{sideCam@{sideCam}!FlipCamera@{FlipCamera}}
+\doxysubsubsection{\texorpdfstring{sideCam}{sideCam}}
+{\footnotesize\ttfamily Camera Flip\+Camera.\+side\+Cam}
+
+
+
+The side camera. Scans the orientation of the head not scanned by the main camera. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+2020 Fall/\+C\+G\+U\+I/\+A\+R\+Master3/\+Assets/\+Scripts/\mbox{\hyperlink{_flip_camera_8cs}{Flip\+Camera.\+cs}}\end{DoxyCompactItemize}
